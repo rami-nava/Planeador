@@ -1,0 +1,197 @@
+h1{
+    font-family: monospace;
+    font-size: 50px;
+    font-weight: 100;
+}
+
+h2{
+    font-family: monospace;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+body{
+    min-height: 100vh;
+    margin: 10px;
+}
+
+.centerBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.opciones{
+    display: flex;
+    gap: 50px;
+}
+
+.sub {
+    color:black;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+  }
+
+.sub:hover {
+    transform: scale(1.05);
+}
+
+#headNP{
+    display: flex;
+    margin: 20px;
+}
+
+.col1{
+    display: flex;
+    flex-direction: column;
+}
+
+.col2{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+}
+
+hr{
+    height: 2px;
+    background-color: black;
+}
+
+#tareas{
+    display: flex;
+    align-items: center;
+}
+
+#tareas h1:first-child{
+    margin: 0 auto;
+}
+
+#new{
+    padding-right: 10px;
+    transition: transform 0.4s ease;
+}
+
+#new:hover{
+    cursor: pointer;
+    transform: scale(1.1)
+}
+
+.card{
+    border-radius: 10px;
+}
+
+.tarea{
+    margin: 30px;
+}
+
+.encargado{
+    margin: 5px 0px;
+}
+
+.newUser{
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    transition: transform 0.4s ease;
+}
+
+.sinDef{
+    display: flex;
+    align-items: center;
+}
+
+.newUser:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#headMP{
+   text-align: center;
+    margin: 20px;
+}
+
+.infPlan{
+    display: flex;
+}
+
+.planHr{
+    margin-left: auto;
+}
+
+.card-title{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card{
+    position: relative;
+    padding: 20px;
+    border-radius: 12px;
+    background: white;
+}
+
+.tag {
+    position: absolute;
+    top: -12px;
+    right: -30px;
+
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+
+    background: black;
+    color: white;
+}
+
+.formPlan{
+    width: 50%;
+    display: flex;
+    text-align: center;
+}
+
+.nuevoplanBtn{
+    transition: all 0.5s ease;
+}
+
+.nuevoplanBtn:hover{
+    background-color: white;
+    color: black;
+}
+
+.formTarea{
+    display: flex;
+    flex-direction: column;
+}
+
+.formEncargado{
+    display: flex;
+    flex-direction: column;
+}
+
+.nuevaTareaBtn{
+    width: 50%;
+    align-self: center;
+}
+
+.nuevoEncargadoBtn{
+    width: 50%;
+    align-self: center;
+}
+
+.responsables{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.btnResponsable{
+    margin-left: auto;
+}
+
+.tarjetaPlan:hover{
+    cursor: pointer;
+}

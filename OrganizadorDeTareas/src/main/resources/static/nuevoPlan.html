@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Formulario de Plan</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="centerBody">
+    <h1>Nuevo Plan</h1>
+    <div class="card formPlan">
+        <form id="formPlanNuevo">
+    
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="nombre" placeholder="Asado con amigos" required>
+                <label for="nombre">Nombre del Plan</label>
+            </div>
+    
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="lugar" placeholder="Casa de Juan" required>
+                <label for="lugar">Lugar</label>
+            </div>
+    
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="participantes" placeholder="8" min="1" required>
+                <label for="participantes">Cantidad de participantes</label>
+            </div>
+    
+            <div class="form-floating mb-3">
+                <input type="date" class="form-control" id="fecha" required>
+                <label for="fecha">Fecha</label>
+            </div>
+    
+            <div class="form-floating mb-3">
+                <input type="time" class="form-control" id="hora" required>
+                <label for="hora">Hora</label>
+            </div>
+    
+            <button type="submit" id="btnFormPlan" class="btn btn-dark nuevoplanBtn">
+                Crear Plan
+            </button>
+    
+        </form>
+    </div>
+    
+</body>
+<script src="nuevoPlan.js"></script>
+</html>

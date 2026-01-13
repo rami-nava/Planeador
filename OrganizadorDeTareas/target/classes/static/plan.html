@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Plan</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header id="headNP">
+        <div class="col1">
+            <h1 id="nombre" style="font-weight: 900;"></h1>
+            <h2 id="participantes">Cantidad de Participantes:</h2>
+            <h2 id="lugar">Lugar:</h2>
+        </div>
+        <div class="col2">
+            <h2 id="fecha">Fecha:</h2>
+            <h2 id="hora">Hora:</h2>
+        </div>
+    </header>
+
+    <hr>
+
+    <div>
+        <div id="tareas">
+            <h1 style="font-weight: 900;">Tareas</h1>
+            <h1 id="new">+</h1>
+        </div>
+        <div id="listado" class="row row-cols-1 row-cols-md-3 g-4">
+
+        </div>
+    </div>
+    
+  <!-- Modal -->
+  <div class="modal fade" id="modalTareas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header modalTarea">
+          <h5 class="modal-title w-100 text-center" id="tituloModal">Nueva Tarea</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+            <div class="modal-body card">
+                <form id="formTareaNueva" class="formTarea">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="nom" placeholder="Comprar carbon" required>
+                        <label for="nom">Nombre de Tarea</label>
+                    </div>
+        
+                    <div class="form-floating mb-3">
+                        <input type="number" class="form-control" id="res" placeholder="2" min="1" required>
+                        <label for="res">Cantidad de responsables</label>
+                    </div>
+        
+                    <button type="submit" id="btnFormTarea" class="btn btn-dark nuevoplanBtn nuevaTareaBtn">
+                        Crear
+                    </button>
+                </form>
+            </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modalEncargados" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header modalEncargado">
+          <h5 class="modal-title w-100 text-center" id="tituloModal">Datos del Encargado</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+            <div class="modal-body card">
+                <form id="formEncargadoNuevo" class="formEncargado">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="nombreEnc" placeholder="Juan" required>
+                        <label for="nombreEnc">Nombre</label>
+                    </div>
+        
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="apellidoEnc" placeholder="Martinez" required>
+                        <label for="apellidoEnc">Apellido</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="contactoEnc" placeholder="juan@gmail.com" required>
+                        <label for="contactoEnc">Email(@)</label>
+                    </div>
+        
+                    <button type="submit" id="btnFormEncargado" class="btn btn-dark nuevoplanBtn nuevoEncargadoBtn">
+                        Asignar
+                    </button>
+                </form>
+            </div>
+      </div>
+    </div>
+  </div>
+    
+
+
+</body>
+<script src="plan.js"></script>
+</html>
